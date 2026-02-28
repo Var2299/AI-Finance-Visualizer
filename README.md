@@ -14,12 +14,12 @@ A full-stack finance tracking app with AI-powered insights, interactive charts, 
 
 ### Backend
 - Node.js + Express + TypeScript
-- MongoDB + Mongoose (with TypeScript models)
+- MongoDB + Mongoose 
 - JWT & bcrypt for authentication
 - Google Gemini API
 
 ### Frontend
-- React 18 + TypeScript (Vite)
+- React 18 + TypeScript 
 - Tailwind CSS (custom glassmorphism)
 - Recharts for visualizations
 - Axios for API calls
@@ -47,14 +47,14 @@ Open [http://localhost:5173](http://localhost:5173) and start tracking!
 
 ```
 ai-finance-visualizer/
-├── server/                 # Express + TypeScript backend
+├── server/                
 │   ├── server.ts
 │   ├── models/             # Mongoose schemas (User, Transaction)
 │   ├── middleware/         # Auth middleware (JWT)
 │   ├── controllers/        # Gemini AI logic
 │   └── routes/             # API endpoints (auth, transactions, ai)
 │
-└── client/                 # React + TypeScript frontend
+└── client/                
     └── src/
         ├── App.tsx          # Main app logic
         └── components/
