@@ -63,7 +63,7 @@ const Auth: React.FC<AuthProps> = ({ onAuthSuccess }) => {
       const endpoint = isLogin ? '/auth/login' : '/auth/signup';
       
       const response = await axios.post<AuthResponse>(
-        `http://localhost:5000/api${endpoint}`,
+        `https://ai-finance-visualizer-backend.onrender.com/api${endpoint}`,
         formData
       );
 
