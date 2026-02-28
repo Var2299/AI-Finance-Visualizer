@@ -59,7 +59,7 @@ const Dashboard: React.FC<DashboardProps> = ({ token, onLogout }) => {
   const fetchTransactions = async () => {
     try {
       const response = await axios.get<ApiResponse<Transaction[]>>(
-        'http://localhost:5000/api/transactions',
+        'https://ai-finance-visualizer-backend.onrender.com/api/transactions',
         getAuthConfig()
       );
       
@@ -89,7 +89,7 @@ const Dashboard: React.FC<DashboardProps> = ({ token, onLogout }) => {
       const payload = { ...formData, amount: parseFloat(formData.amount) };
       
       const response = await axios.post<ApiResponse<Transaction>>(
-        'http://localhost:5000/api/transactions',
+        'https://ai-finance-visualizer-backend.onrender.com/api/transactions',
         payload,
         getAuthConfig()
       );
@@ -108,7 +108,7 @@ const Dashboard: React.FC<DashboardProps> = ({ token, onLogout }) => {
   const handleDelete = async (id: string) => {
     try {
       const response = await axios.delete<ApiResponse<null>>(
-        `http://localhost:5000/api/transactions/${id}`,
+        `https://ai-finance-visualizer-backend.onrender.com/api/transactions/${id}`,
         getAuthConfig()
       );
 
@@ -126,7 +126,7 @@ const Dashboard: React.FC<DashboardProps> = ({ token, onLogout }) => {
 
     try {
       const response = await axios.post<ApiResponse<string[]>>(
-        'http://localhost:5000/api/ai/insights',
+        'https://ai-finance-visualizer-backend.onrender.com/api/ai/insights',
         {},
         getAuthConfig()
       );
