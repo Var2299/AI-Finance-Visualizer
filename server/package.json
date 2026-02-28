@@ -1,0 +1,44 @@
+{
+  "name": "ai-finance-server",
+  "version": "1.0.0",
+  "description": "Backend for AI Finance Visualizer",
+  "main": "dist/server.tsx",
+  "type": "module",
+ "scripts": {
+  "start": "node dist/server.tsx",
+  "dev": "nodemon --exec tsx server.tsx",
+  "build": "tsc",
+  "typecheck": "tsc --noEmit"
+},
+  "keywords": [
+    "finance",
+    "ai",
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.3.2",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "nodemonConfig": {
+  "extensions": "ts,js,json",
+  "ignore": ["dist/*", "node_modules/*"]
+}
+}
