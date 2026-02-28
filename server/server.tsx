@@ -34,7 +34,7 @@ app.use(express.json());
 // Enable CORS for frontend communication
 app.use(
   cors({
-    origin: 'http://localhost:5173', // Vite default port
+    origin: 'https://ai-finance-visualizer.onrender.com/', // Vite default port
     credentials: true
   })
 );
