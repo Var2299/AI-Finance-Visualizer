@@ -7,7 +7,7 @@ A full-stack finance tracking app with AI-powered insights, interactive charts, 
 - 🔐 **Secure JWT Authentication** (with bcrypt)
 - 💰 **Expense Tracking** – Add, view, delete transactions
 - 📊 **Interactive Charts** – Donut & area charts using Recharts
-- 🤖 **AI Insights** – Personalized financial advice via Google Gemini 1.5 Flash
+- 🤖 **AI Insights** – Personalized financial advice via Google Gemini 2.5 Flash
 - 🎨 **Glassmorphism UI** – Dark theme with neon accents (Tailwind CSS)
 
 ## 🛠️ How AI Finance Visualizer Works
